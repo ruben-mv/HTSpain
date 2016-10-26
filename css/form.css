@@ -1,0 +1,142 @@
+/*** ALL FORMS ***/
+
+.form {
+	margin: 0;
+}
+.form FIELDSET {
+	padding: 10px 0 10px 0 !important /*Non-IE6*/;
+	padding: 0 /*IE6*/;
+	border: solid 1px #6B0000;
+}
+.form FIELDSET LEGEND {
+	margin: 0 0 0 5px !important /*Non-IE*/;
+	margin: 0 0 20px 5px /*IE6*/;
+	padding: 0 7px 0 7px;
+	color: #6B0000;
+	font-weight: bold;
+	font-size: 130%;
+	text-transform: uppercase;
+}
+.form INPUT, .form SELECT {
+	font-family: verdana,arial,sans-serif;
+	font-size: 110%;
+}
+.form .field INPUT, .form .field SELECT, .form .field TEXTAREA {
+	padding: 2px;
+	border: solid 1px rgb(200,200,200);
+}
+.form .submit INPUT {
+	width: 9.0em;
+	margin-right: 20px;
+	padding: 1px !important /*Non-IE6*/;
+	padding: 0 /*IE6*/;
+	background: rgb(230,230,230);
+	border: solid 1px rgb(150,150,150);
+	text-align: center;
+	color: rgb(150,150,150);
+}
+.form .submit INPUT:hover {
+	cursor: pointer;
+	border: solid 1px rgb(80,80,80);
+	background: rgb(220,220,220);
+	color: rgb(80,80,80);
+}
+
+
+
+/*** VERTICAL FORM ***/
+
+.verticalForm FIELDSET.left {
+	float: left;
+}
+.verticalForm FIELDSET.right {
+	float: right;
+}
+.verticalForm DIV.field {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.verticalForm LABEL {
+	float: left;
+	width: 120px;
+	margin: 0 0 0 10px;
+	padding: 2px;
+	font-size: 110%;
+}
+.verticalForm .field INPUT {
+	width: 170px;
+}
+.verticalForm .field SELECT {
+	width: 175px;
+}
+.verticalForm .submit INPUT {
+	float: right;
+}
+.verticalForm TEXTAREA {
+	width: 540px;
+	height: 175px;
+}
+
+
+
+/*** LINEAR (HORIZONTAL) FORM ***/
+
+.linearForm DIV.field, .linearForm DIV.submit {
+	float: left;
+	margin: 1em 0 1em 1em;
+}
+.linearForm .field SELECT {
+	width: 75px;
+}
+
+
+
+/*** LOGIN FORM ***/
+.loginForm {
+	width: 700px;
+}
+.loginForm FIELDSET {
+	height: 370px;
+	width: 320px;
+}
+
+/*** LOGIN HT FORM ***/
+.loginFormHT {
+	width: 330px;
+}
+
+.repatriateInfoForm {
+	width: 700px;
+}
+
+/*** NEWS FORM ***/
+.newsForm {
+	width: 700px;
+	padding-bottom: 2em;
+}
+.newsForm UL {
+	/*background-color: #FFFF95;*/
+	padding: .5em 0 .5em 0;
+	border: solid 1px #6B0000;
+}
+.newsForm UL LI {
+	display: inline;
+	font-weight: bold;
+}
+
+/*** USERS FORM ***/
+.usersForm TR.result {
+	height: 2.5em;
+}
+.usersForm .field SELECT {
+	width: 150px;
+}
+.usersForm .submit INPUT {
+	float: right;
+	margin-top: 2em;
+}
+
+/*** LANGUAGE CHECK FORM ***/
+.languageCheckForm {
+	width: 310px;
+}

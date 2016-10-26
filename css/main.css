@@ -1,0 +1,262 @@
+/*************************************************************/
+/*   Design:   Multiflex-3 Update-2 / Layout-1               */
+/*   File:     Text formats                                  */
+/*-----------------------------------------------------------*/
+/*   Author:   G. Wolfgang                                   */
+/*   Date:     November 29, 2006                             */
+/*   Homepage: wwww.1-2-3-4.info                             */
+/*-----------------------------------------------------------*/
+/*   License:  Fully open source without restrictions.       */
+/*             Please keep footer credits with a link to     */
+/*             G. Wolfgang (www.1-2-3-4.info). Thank you!    */
+/*************************************************************/
+
+
+
+/*** GENERAL CSS INFO ***/
+
+#main UL, #main OL {
+	list-style: none;
+	margin: .5em 0 1em 0;
+}
+#main UL LI, #main OL LI {
+	margin: 0 0 0.2em 2px;
+	padding: 0 0 0 12px;
+	line-height: 1.4em;
+	font-size: 120%;
+}
+
+#main A {
+	color: #6B0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#main H1 A {
+	color: rgb(125,125,125);
+	font-weight: normal;
+	text-decoration: none;
+}
+#main A:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+#main A:visited {
+	color: #000000;
+}
+
+#main A IMG {
+	border: solid 1px rgb(150,150,150);
+}
+#main A:hover IMG {
+	border: solid 1px rgb(220,220,220);
+}
+
+
+
+#main H1, H2, H3, H4, H5, H6 {
+	font-family: "trebuchet ms",arial,sans-serif;
+}
+#main H1 {
+	margin: 0 0 0.4em 0;
+	padding: 0 0 5px 0;
+	background: url(../img/linea1.png) no-repeat left bottom;
+	color: #6b0000;
+	font-weight: bold;
+	font-size: 180%;
+}
+/*#main H2 {
+	margin: 1.0em 0 0.5em 0;
+	color: rgb(80,80,80);
+	font-weight: normal;
+	font-size: 170%;
+}*/
+#main H2 {
+	color: #6B0000;
+	font-weight: normal;
+	font-size: 180%;
+}
+/*#main H3 {
+	margin: -1.0em 0 0.5em 0;
+	color: rgb(125,125,125);
+	font-weight: normal;
+	font-size: 130%;
+}
+#main H4 {
+	margin: 1.5em 0 1.0em 0;
+	color: rgb(80,80,80);
+	font-weight: normal;
+	font-size: 170%;
+}
+#main H5 {
+	margin:0.5em 0 0.5em 0;
+	color: rgb(140,0,0);
+	font-size:140%;
+	font-weight: bold;
+	text-align: center;
+}
+#main H6 {
+	margin: 1.5em 0 1.0em 0;
+	color: #6b0000;
+	font-weight: normal;
+	font-size: 140%;
+}*/
+
+#main P {
+	margin: 1.0em 0 1.0em 0;
+	line-height: 1.5em;
+	font-size: 120%;
+}
+#main P.center {
+	text-align:center;
+}
+#main P.right {
+	text-align: right;
+}
+#main P.details {
+	clear: both;
+	margin: -0.25em 0 1.0em 0;
+	line-height: 1.0em;
+	font-size: 110%;
+}
+#main BLOCKQUOTE {
+	clear: both;
+	margin: 0 30px 0.6em 30px;
+	font-size: 90%;
+}
+
+
+
+#main DIV.center {
+	text-align:center;
+}
+
+
+
+#main HR.line {
+	clear: both;
+	width: 100%;
+	height: 0.1em;
+	border: none;
+	background: rgb(140,0,0);
+	color: rgb(140,0,0);
+}
+
+#main IMG.border {
+	border: solid 1px #000000;
+}
+
+
+
+
+
+/*** MESSAGES ***/
+
+.ok_list, .error_list {
+	border: solid 1px;
+	padding: .5em 0 .5em .5em;
+	margin-bottom: 2em;
+}
+.error_list {
+	background-color: #DC5A5C;
+	border-color: #6B0000;
+}
+.ok_list {
+	background-color: rgb(231,251,219);
+	border-color: rgb(165,209,138);
+}
+
+
+
+
+
+/*** HOME ***/
+
+#welcome {
+	margin-bottom: 2em;
+}
+#welcome .body {
+	font-size: 120%;
+	background-color: #FFFF85;
+	border: 1px solid #6B0000;
+	line-height: 1.5em;
+	padding: 1em;
+}
+
+
+
+/*** NEWS ***/
+
+#news .notice {
+	margin-bottom: 5em;
+}
+#news .notice .noticeTitle {
+	width: 100%;
+}
+#news .notice .noticeTitle .spiffy * {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  font-size: .01em;
+  background: #FFFF85;
+}
+#news .notice .noticeTitle .spiffy1 {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-left: 1px solid #FFFF85;
+  border-right: 1px solid #FFFF85;
+  background: #FFFF85;
+}
+#news .notice .noticeTitle .spiffy2 {
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  border-left: 1px solid #FFFF85;
+  border-right: 1px solid #FFFF85;
+  background: #FFFF85;
+}
+#news .notice .noticeTitle .spiffy3 {
+  margin-left: 1px;
+  margin-right: 1px;
+  border-left: 1px solid #FFFF85;
+  border-right: 1px solid #FFFF85;
+}
+#news .notice .noticeTitle .spiffy4 {
+  border-left: 1px solid #FFFF85;
+  border-right: 1px solid #FFFF85;
+}
+#news .notice .noticeTitle .spiffy5 {
+  border-left: 1px solid #FFFF85;
+  border-right: 1px solid #FFFF85;
+}
+#news .notice .noticeTitle .spiffyfg {
+	padding-left: 5px;
+	background-color: #FFFF85;
+	font-size: 170%;
+	color: #6B0000;
+	font-weight: bold;
+	vertical-align: top;
+}
+#news .notice .noticeBody {
+	font-size: 120%;
+	line-height: 1.5em;
+	margin: 1em 0 1em 0;
+	padding-left: 1em;
+}
+#news .notice .noticeFooter {
+	margin-left: .5em;
+}
+
+
+
+/*** ABS POTENTIAL ***/
+#abs_potential OL {
+	list-style-type: upper-alpha;
+}
+#abs_potential OL LI {
+	margin-left: 3em;
+	padding-left: 0;
+}

@@ -1,0 +1,295 @@
+/*************************************************************/
+/*   Design:   Multiflex-3 Update-2 / Layout-1               */
+/*   File:     Global layout structure                       */
+/*-----------------------------------------------------------*/
+/*   Author:   G. Wolfgang                                   */
+/*   Date:     November 29, 2006                             */
+/*   Homepage: wwww.1-2-3-4.info                             */
+/*-----------------------------------------------------------*/
+/*   License:  Fully open source without restrictions.       */
+/*             Please keep footer credits with a link to     */
+/*             G. Wolfgang (www.1-2-3-4.info). Thank you!    */
+/*************************************************************/
+
+/************/
+/*  GLOBAL  */
+/************/
+
+/* NON-HEADER */
+* {
+	padding:0;
+	margin:0;
+}
+
+BODY {
+	font-size: 62.5%;
+	background-color: #FFFFFF;
+	font-family: verdana,arial,sans-serif;
+	background-image: url(../img/fondo.jpg);
+	background-repeat: repeat;
+}
+/*Font-size: 1.0em = 10px when browser default size is 16px*/
+
+#page-container {
+	width: 1000px;
+	margin: 0px auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+#main {
+	width: 1000px;
+	padding: 1em 0 1em 0;
+	background-color: #FFFFB7;
+}
+#main-content {
+	display: inline; /*Fix IE floating margin bug*/;
+	float: left;
+	width: 940px;
+	margin:0 0 0 30px;
+	overflow: visible !important /*Firefox*/;
+	overflow: hidden /*IE6*/;
+}
+
+
+
+
+
+/*******************/
+/*  HEADER SECTION */
+/*******************/
+
+#header {
+	width: 1000px;
+	font-family: "trebuchet ms",arial,sans-serif;
+}
+#header-middle {
+	height: 190px;
+	background: url(../img/bg_head_middle.png);
+	overflow: visible !important /*Firefox*/;
+	overflow:hidden /*IE6*/;
+}
+
+/* sitelogo */
+
+.sitelogo {
+	width: 32px;
+	height: 31px;
+	position: absolute;
+	z-index: 1;
+	margin: 33px 0 0 300px;
+	background: url(../img/bg_head_top_logo.jpg);
+}
+
+/* language menu */
+
+#lang-menu {
+	position: absolute;
+	z-index: 2;
+	margin-top: 37px;
+	margin-left: 335px !important /*Non-IE6*/;
+	margin-left: 63px /*IE6*/;
+}
+#lang-menu LI {
+	display: inline;
+	list-style: none;
+}
+#lang-menu LI A {
+	padding: 0 0 0 3px;
+}
+#lang-menu A:hover {
+	text-decoration: none;
+}
+#lang-menu A IMG {
+	border: none;
+}
+
+/* session menu */
+
+#session-menu {
+	float: right; /*float doesn't work with position:absolute*/
+	width: auto;
+	z-index: 3;
+	margin: 40px 10px 0 0;
+	color: rgb(125,125,125);
+	font-weight: bold;
+	font-size: 130%;
+}
+#session-menu * {
+	text-decoration: none;
+	vertical-align: middle;
+}
+#session-menu IMG {
+	border: 0;
+}
+
+/* main drop-down menu */
+
+#main-menu {
+	float: left;
+	width: 1000px;
+	border: none;
+	background: rgb(220,220,220) url(../img/bottom_nav.jpg) repeat-x;
+	color: #C1C1C1;
+	font-size: 1.0em;
+	font-size: 130%;
+} /*Color navigation bar normal mode*/
+#main-menu UL {
+	list-style-type: none;
+}
+#main-menu UL LI {
+	float: left;
+	width: auto;
+	position: relative;
+	z-index: 1000;
+	border-right: solid 1px rgb(75,75,75);
+}
+#main-menu UL LI UL {
+	display: none;
+	border: none;
+	margin-left: -30px;
+	padding: 0 30px 30px 30px;
+	background: url(../img/bg_head_bottom_nav_hover.gif) top center;
+} /*Sticky hover zones*/
+#main-menu UL LI A {
+	float: left;
+	width: auto;
+	display: block;
+	height: 3.1em;
+	line-height: 3.1em;
+	padding: 0 16px 0 16px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #C1C1C1;
+}
+#main-menu UL LI:hover {
+	width: auto;
+}
+#main-menu TABLE {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	border-collapse: collapse;
+}
+
+/*Non-IE6*/
+#main-menu UL LI:hover A {
+	background-color: rgb(10,10,10);
+	text-decoration: none;
+} /*Color main cells hovering mode*/
+#main-menu UL LI:hover UL {
+	display: block;
+	position: absolute;
+	z-index: 998;
+	top: 3.0em;
+	margin-top: 0.1em;
+	left: 0;
+}
+#main-menu UL LI:hover UL LI UL {
+	display: none;
+}
+#main-menu UL LI:hover UL LI A {
+	display: block;
+	width: 10em;
+	height: auto;
+	line-height: 1.3em;
+	margin-left: -1px;
+	padding: 4px 16px 4px 16px;
+	border-left: solid 1px rgb(175,175,175);
+	border-bottom: solid 1px rgb(175,175,175);
+	background-color: rgb(237,237,237);
+	font-weight: normal;
+	color: rgb(50,50,50);
+} /*Color subcells normal mode*/
+#main-menu UL LI:hover UL LI A:hover {
+	background-color: rgb(210,210,210);
+	text-decoration: none;
+} /*Color subcells hovering mode*/
+
+/*IE6*/
+#main-menu UL LI A:hover {
+	background-color: rgb(10,10,10);
+	text-decoration: none;
+} /*Color main cells hovering mode*/
+#main-menu UL LI A:hover UL {
+	display: block;
+	position: absolute;
+	z-index: 998;
+	top: 3.1em;
+	t\op: 3.0em;
+	left: 0;
+	marg\in-top: 0.1em;
+}
+#main-menu UL LI A:hover UL LI A {
+	display: block;
+	w\idth: 10em;
+	height: 1px;
+	line-height: 1.3em;
+	padding: 4px 16px 4px 16px;
+	border-left: solid 1px rgb(175,175,175);
+	border-bottom: solid 1px rgb(175,175,175);
+	background-color: rgb(237,237,237);
+	font-weight: normal;
+	color: rgb(50,50,50);
+} /*Color subcells normal mode*/
+#main-menu UL LI A:hover UL LI A UL {
+	visibility: hidden;
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	z-index: 997;
+}
+#main-menu UL LI A:hover UL LI A:hover {
+	background-color: rgb(210,210,210);
+	text-decoration: none;
+} /*Color subcells hovering mode*/
+
+
+
+/********************/
+/*  FOOTER SECTION  */
+/********************/
+#footer {
+	width: 1000px;
+	height: 29px;
+	padding: 1.1em 0 0;
+	background: #FFFFFF url(../img/bg_head_bottom_nav.jpg) repeat-x;
+	font-size: 1.0em;
+	overflow: visible !important /*Firefox*/;
+	overflow:hidden /*IE6*/;
+}
+#footer P {
+	line-height: 1em;
+	text-align: center;
+	color: rgb(125,125,125);
+	font-weight: bold;
+	font-size: 110%;
+}
+#footer P.credits {
+	font-weight: normal;
+}
+#footer A {
+	text-decoration: underline;
+	color: rgb(125,125,125);
+}
+#footer A:hover {
+	text-decoration: none;
+	color: #000000;
+}
+#footer A:visited {
+	color: #000000;
+}
+
+
+
+/******************/
+/*  CLEAR FLOATS  */
+/******************/
+#page-container:after, #header:after, .header-breadcrumbs:after, #main:after, #main-content:after, #footer:after, p:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
